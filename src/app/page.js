@@ -4,7 +4,7 @@ import headshot from "../assets/headshot.png"
 import smiskiThumbsUp from '../assets/smiski-thumbsup.png'
 import styles from "./page.module.css";
 import { useRouter } from 'next/navigation'
-// import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
+import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
 
 export default function Home() {
   const router = useRouter()
@@ -55,7 +55,7 @@ export default function Home() {
           </ul>
         </section>
         
-        {/* <GLARTDemo /> */}
+        <GLARTDemo />
         
         <section>
           {/* make this section dropdowns? accordion style? */}
