@@ -1,93 +1,87 @@
+'use client';
 import Image from "next/image";
+import headshot from "../assets/headshot.png"
+import smiskiThumbsUp from '../assets/smiski-thumbsup.png'
 import styles from "./page.module.css";
+import { useRouter } from 'next/navigation'
+// import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
 
 export default function Home() {
+  const router = useRouter()
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        {/* implement a sandwich menu sidebar */}
+        {/* implement popup - for when smiski is clicked - with hint to next clue */}
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          className={styles.headshot}
+          src={headshot}
+          alt="Josiann Zhou Headshot"
+          height={200}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <section className={styles.intro}>
+          <h1>Hello! </h1>
+          <text>
+            My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website! {<br />}
+            A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge. {<br />}
+            I&apos;m fluent in Spanish, Cantonese, English, and French and really enjoy learning new languages. {<br />}
+            I&apos;m also a huge fan of puzzles and riddles. In case you are too I&apos;ve created a little bit of a scavenger hunt, should you choose to take part. {<br />}
+            The first hint is as follows:
+            <p className={"styles.hint"}>A little positive feedback never hurt anybody. Click on the positive vibes for your next clue.</p>
+            If you aren&apos;t into scavenger hunts then please feel free to explore and I hope you enjoy.
+            <p>You can download my resume <a>here</a> or see a summary of my experience below.</p>
+          </text>
+        </section>
+        
+        <section className={styles.technicalSkills}>
+          <h2>
+            Technical Skills
+          </h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>ReactJS</li>
+            <li>NextJS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>Jest</li>
+            <li>Selenium</li>
+            <li>ExpressJS</li>
+            <li>Tailwind CSS</li>
+            <li>p5 JS</li>
+          </ul>
+        </section>
+        
+        {/* <GLARTDemo /> */}
+        
+        <section>
+          {/* make this section dropdowns? accordion style? */}
+          <h2>Work Experience</h2>
+          <h3>Associate Software Developer at Konrad Group</h3>
+          <h3>Web Developer Co-op at Invoke Media</h3>
+          <h3>Clients Frontend Technologies Co-op Developer</h3>
+        </section>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+        <section>
+          <button onClick={() => router.push('/artPage')}>
+            Explore Art Page
+          </button>
+        </section>
+
       </main>
       <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <text> thanks for visiting! </text>
+        <a>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+              aria-hidden
+              src={smiskiThumbsUp}
+              alt="Smiski Thumbs Up"
+              width={16}
+              height={16}
+            />
         </a>
       </footer>
     </div>
