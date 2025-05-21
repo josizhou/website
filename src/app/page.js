@@ -3,13 +3,13 @@ import Image from "next/image";
 import headshot from "../assets/headshot.png"
 import smiskiThumbsUp from '../assets/smiski-thumbsup.png'
 import styles from "./page.module.css";
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
 import workExperienceContent from "@/assets/workExperienceContent";
 import { AccordionElement } from "./components/accordionElement/accordionElement";
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -24,7 +24,7 @@ export default function Home() {
         />
         <section className={styles.intro}>
           <h1>Hello! </h1>
-          <text>
+          <div>
             My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website! {<br />}
             A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge. {<br />}
             I&apos;m fluent in Spanish, Cantonese, English, and French and really enjoy learning new languages. {<br />}
@@ -33,7 +33,7 @@ export default function Home() {
             <p className={"styles.hint"}>A little positive feedback never hurt anybody. Click on the positive vibes for your next clue.</p>
             If you aren&apos;t into scavenger hunts then please feel free to explore and I hope you enjoy.
             <p>You can download my resume <a>here</a> or see a summary of my experience below.</p>
-          </text>
+          </div>
         </section>
         
         <section className={styles.technicalSkills}>
@@ -60,7 +60,7 @@ export default function Home() {
         <GLARTDemo />
         
         <section>
-          <h2>Work Experience</h2>
+          <h2 className={styles.heading}>Work Experience</h2>
           {workExperienceContent.map((workExperience, index) => (
             <AccordionElement {... workExperience} key={index} />
           ))}
@@ -80,8 +80,8 @@ export default function Home() {
               aria-hidden
               src={smiskiThumbsUp}
               alt="Smiski Thumbs Up"
-              width={16}
-              height={16}
+              width={50}
+              height={50}
             />
         </a>
       </footer>

@@ -65,6 +65,10 @@
   margin: 2rem;
 }
 
+.heading {
+  margin: 1rem;
+}
+
 a.primary {
   background: var(--foreground);
   color: var(--background);
@@ -80,12 +84,14 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .footer a {
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .footer img {
