@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    height: 3rem;
+    border-top: solid 0.05rem black;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.title:hover {
+    background-color: lightgray;
+}
+
+.icon {
+    margin: 1rem;
+}
+
+.hidden {
+    display: None;
+}
+
+.content {
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image {
+    margin: 1rem;
+}
+
+.bullets {
+    margin: 1rem;
+}
+

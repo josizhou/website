@@ -5,6 +5,8 @@ import smiskiThumbsUp from '../assets/smiski-thumbsup.png'
 import styles from "./page.module.css";
 import { useRouter } from 'next/navigation'
 import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
+import workExperienceContent from "@/assets/workExperienceContent";
+import { AccordionElement } from "./components/accordionElement/accordionElement";
 
 export default function Home() {
   const router = useRouter()
@@ -58,11 +60,10 @@ export default function Home() {
         <GLARTDemo />
         
         <section>
-          {/* make this section dropdowns? accordion style? */}
           <h2>Work Experience</h2>
-          <h3>Associate Software Developer at Konrad Group</h3>
-          <h3>Web Developer Co-op at Invoke Media</h3>
-          <h3>Clients Frontend Technologies Co-op Developer</h3>
+          {workExperienceContent.map((workExperience, index) => (
+            <AccordionElement {... workExperience} key={index} />
+          ))}
         </section>
 
         <section>

@@ -57,7 +57,7 @@
 }
 
 .headshot {
-  display: none;
+  display: flex;
 }
 
 .technicalSkills ul {
