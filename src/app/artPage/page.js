@@ -2,7 +2,7 @@
 import * as React from "react";
 import { AccordionElement } from "../components/accordionElement/accordionElement";
 import smiskiThumbsUp from '../../assets/smiski-thumbsup.png';
-import backButton from '../../assets/backButton.svg';
+import backArrow from '../../assets/backArrow.svg';
 import Image from "next/image";
 import styles from './page.module.css';
 import { useRouter } from 'next/navigation';
@@ -70,7 +70,7 @@ export default function ArtPage() {
     return(
         <div className={styles.main}>
             <div className={styles.backButton} onClick={() => router.back()}>
-                <Image src={backButton} alt='Back Button' width={25} height={25} />
+                <Image src={backArrow} alt='Back Button' width={25} height={25} />
                 Back
             </div>
             <div>

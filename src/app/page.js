@@ -7,19 +7,28 @@ import { useRouter } from 'next/navigation';
 import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
 import workExperienceContent from "@/assets/workExperienceContent";
 import { AccordionElement } from "./components/accordionElement/accordionElement";
+import sandwichMenu from '../assets/sandwichMenu.svg';
+import { useState } from "react";
+import SandwichMenu from "./components/sandwichMenu/sandwichMenu";
 
 export default function Home() {
   const router = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        {/* implement a sandwich menu sidebar */}
+        <div className={styles.sandwichButton} onClick={() => setIsMenuOpen(true)}>
+          <Image src={sandwichMenu} alt="Sandwich Menu Icon" height={25} width={25} draggable={false}/>
+        </div>
+        {isMenuOpen && <SandwichMenu setIsMenuOpen={setIsMenuOpen} />}
         {/* implement popup - for when smiski is clicked - with hint to next clue */}
         <Image
           className={styles.headshot}
           src={headshot}
           alt="Josiann Zhou Headshot"
           height={200}
+          draggable={false}
           priority
         />
         <section className={styles.intro}>
@@ -82,6 +91,7 @@ export default function Home() {
               alt="Smiski Thumbs Up"
               width={50}
               height={50}
+              draggable={false}
             />
         </a>
       </footer>

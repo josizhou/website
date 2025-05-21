@@ -57,7 +57,11 @@
 }
 
 .headshot {
-  display: flex;
+  display: none;
+}
+
+.sandwichButton {
+  cursor: pointer;
 }
 
 .technicalSkills ul {

@@ -11,7 +11,7 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
         <div className={styles.main}>
             <section className={styles.title} onClick={() => {setIsOpen(!isOpen)}}>
                 <h3>{title}</h3>
-                <Image className={styles.icon} src={isOpen ? upArrow : downArrow} alt={isOpen ? 'upArrow' : 'downArrow'} height={25} width={25}/>
+                <Image className={styles.icon} src={isOpen ? upArrow : downArrow} alt={isOpen ? 'upArrow' : 'downArrow'} height={25} width={25} draggable={false}/>
             </section>
             <section className={isOpen ? styles.content : styles.hidden}>
                 <div className={styles.contentDiv}>
@@ -25,7 +25,7 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
                     )}
                 </div>
                 { imageSrc &&
-                    <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100}/>
+                    <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
                 }
             </section>
         </div>
