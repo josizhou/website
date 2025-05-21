@@ -71,7 +71,7 @@ export default function ArtPage() {
         <div className={styles.main}>
             <div className={styles.backButton} onClick={() => router.back()}>
                 <Image src={backArrow} alt='Back Button' width={25} height={25} />
-                Back
+                <h3 className={styles.backText}>Back</h3>
             </div>
             <div>
                 HELLO ART PAGE

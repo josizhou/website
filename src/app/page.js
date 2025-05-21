@@ -83,7 +83,7 @@ export default function Home() {
 
       </main>
       <footer className={styles.footer}>
-        <text> thanks for visiting! </text>
+        <p> thanks for visiting! </p>
         <a>
           <Image
               aria-hidden
