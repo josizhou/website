@@ -13,6 +13,10 @@
     justify-content: space-between;
 }
 
+.title h3 {
+    font-weight: 300;
+}
+
 .title:hover {
     background-color: lightgray;
 }
@@ -27,7 +31,7 @@
 
 .content {
     display: flex;
-    padding: 0 1rem 1rem 1rem;
+    padding: 1rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -37,6 +41,6 @@
 }
 
 .bullets {
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
