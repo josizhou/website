@@ -1,11 +1,19 @@
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
 .main {
     display: flex;
     background-color: lavender;
-    z-index: 1;
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    bottom: 0;
     width: 30vw;
     flex-direction: column;
 }
@@ -22,4 +30,13 @@
 
 .link {
     cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+    width: 70vw;
 }
