@@ -19,9 +19,15 @@
 }
 
 .closeIcon {
-    margin: 1rem;
-    padding: 1rem;
+    width: fit-content;
+    margin: 1.5rem;
+    padding: 0.5rem;
     cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.closeIcon:hover {
+    background-color: rgba(175, 175, 175, 0.25);
 }
 
 .links {
@@ -30,6 +36,10 @@
 
 .link {
     cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .overlay {

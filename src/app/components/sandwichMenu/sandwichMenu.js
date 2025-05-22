@@ -10,7 +10,7 @@ export default function SandwichMenu ({setIsMenuOpen}) {
         <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.closeIcon} onClick={() => setIsMenuOpen(false)}>
-                    <Image src={closeIcon} alt='Close Button' width={25} height={25} draggable={false}/>
+                    <Image src={closeIcon} alt='Close Button' width={20} height={20} draggable={false}/>
                 </div>
                 <section className={styles.links}>
                     <h2 className={styles.link} onClick={() => {

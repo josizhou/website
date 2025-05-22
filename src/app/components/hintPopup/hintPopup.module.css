@@ -1,0 +1,44 @@
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 100, 100, 0.3);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    height: 25vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:lavenderblush;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: fixed;
+    align-items: center;
+}
+
+.title {
+    margin: 1rem 3rem;
+}
+
+.closeButton {
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: rgba(175, 175, 175, 0.25);
+}

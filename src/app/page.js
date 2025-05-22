@@ -10,10 +10,12 @@ import { AccordionElement } from "./components/accordionElement/accordionElement
 import sandwichMenu from '../assets/sandwichMenu.svg';
 import { useState } from "react";
 import SandwichMenu from "./components/sandwichMenu/sandwichMenu";
+import HintPopup from "./components/hintPopup/hintPopup";
 
 export default function Home() {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHintOpen, setIsHintOpen] = useState(false);
 
   return (
     <div className={styles.page}>
@@ -22,7 +24,7 @@ export default function Home() {
           <Image src={sandwichMenu} alt="Sandwich Menu Icon" height={25} width={25} draggable={false}/>
         </div>
         {isMenuOpen && <SandwichMenu setIsMenuOpen={setIsMenuOpen} />}
-        {/* implement popup - for when smiski is clicked - with hint to next clue */}
+        {isHintOpen && <HintPopup setIsHintOpen={setIsHintOpen} />}
         <Image
           className={styles.headshot}
           src={headshot}
@@ -84,7 +86,7 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <p> thanks for visiting! </p>
-        <a>
+        <a onClick={() => setIsHintOpen(true)}>
           <Image
               aria-hidden
               src={smiskiThumbsUp}
