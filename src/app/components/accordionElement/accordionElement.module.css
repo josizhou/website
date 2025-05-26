@@ -31,10 +31,17 @@
 
 .content {
     display: flex;
+    flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
+    align-items: left;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 50vw;
+    justify-content: space-between;
 }
 
 .blurb {
@@ -42,7 +49,7 @@
 }
 
 .image {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .bullets {

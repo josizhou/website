@@ -1,3 +1,4 @@
+import favicon from './favicon.png';
 const workExperienceContent = [
     {
         title: "Associate Software Developer at Konrad Group",
@@ -8,7 +9,9 @@ const workExperienceContent = [
             'Leveraged Vite and React to build a classification system with pagination, search, filtering, and components from scratch',
             'Developed applications with a focus on accessibility and responsiveness to media sizes using SASS and CSS Grid',
             'Introduced testing to a client project and brought test coverage from 0 to 80% by writing 204 unit tests in 1 month - wrote Jest unit tests, API microservice integration tests, and Express route tests with SuperTest'
-        ]
+        ],
+        imageSrc: favicon,
+        imageAlt: "Konrad Group Logo",
     },
     {
         title: "Web Developer Co-op at Invoke Media",

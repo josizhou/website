@@ -14,8 +14,8 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
                 <Image className={styles.icon} src={isOpen ? upArrow : downArrow} alt={isOpen ? 'upArrow' : 'downArrow'} height={25} width={25} draggable={false}/>
             </section>
             <section className={isOpen ? styles.content : styles.hidden}>
+                {content && <div className={styles.blurb}>{content}</div>}
                 <div className={styles.contentDiv}>
-                    {content && <div className={styles.blurb}>{content}</div>}
                     { bulletPoints && (
                         <ul className={styles.bullets}>
                             {bulletPoints.map((item, index) => (
@@ -23,10 +23,10 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
                             ))}
                         </ul>
                     )}
+                    { imageSrc &&
+                        <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
+                    }
                 </div>
-                { imageSrc &&
-                    <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
-                }
             </section>
         </div>
     )
