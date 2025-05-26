@@ -1,4 +1,7 @@
 import favicon from './favicon.png';
+import invokeLogo from './invokeLogo.svg';
+import kinaxisLogo from './kinaxisLogo.svg';
+
 const workExperienceContent = [
     {
         title: "Associate Software Developer at Konrad Group",
@@ -22,7 +25,9 @@ const workExperienceContent = [
             'Reduced video connection time by 10s using GraphQL, Apollo Client, DynamoDB, and Pulumi infrastructure',
             'Debugged web application using Chrome and Safari browser developer tools to ensure cross-browser compatibility',
             'Updated web styling and layout using Tailwind CSS and React Native for mobile app experience'
-        ]
+        ],
+        imageSrc: invokeLogo,
+        imageAlt: 'Invoke Media Logo',
     },
     {
         title: "Co-op Developer at Kinaxis",
@@ -31,7 +36,9 @@ const workExperienceContent = [
             'Created standardized reusable and screen reader accessible User Interface components in a Storybook component library',
             'Completed full feature development processes for 6 shortcuts, wrote acceptance criteria and estimated complexity',
             'Resolved 20+ UI bugs and ensured 90% testing coverage for new features by writing Jest unit tests',
-        ]
+        ],
+        imageSrc: kinaxisLogo,
+        imageAlt: 'Kinaxis Logo',
     },
 ]
 
