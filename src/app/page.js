@@ -11,6 +11,7 @@ import sandwichMenu from '../assets/sandwichMenu.svg';
 import { useState } from "react";
 import SandwichMenu from "./components/sandwichMenu/sandwichMenu";
 import HintPopup from "./components/hintPopup/hintPopup";
+import { DownloadLink } from "./components/downloadLink/downloadLink";
 
 export default function Home() {
   const router = useRouter();
@@ -39,7 +40,12 @@ export default function Home() {
             <p className={styles.introLine}>My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website!</p>
             <p className={styles.introLine}>A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge.</p>
             <p className={styles.introLine}>I&apos;m fluent in Spanish, Cantonese, English, and French and really enjoy learning new languages.</p>
-            <p className={styles.introLine}>You can download my resume <a>here</a> or see a summary of my experience below.</p>
+            <p className={styles.introLine}>You can download my resume
+              <DownloadLink
+                url='../assets/Josiann_Zhou___Resume.pdf'
+                filename='Josiann Zhou Resume'
+              />
+              or see a summary of my experience below.</p>
           </div>
         </section>
         
