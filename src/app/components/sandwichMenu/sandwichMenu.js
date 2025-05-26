@@ -9,10 +9,10 @@ export default function SandwichMenu ({setIsMenuOpen}) {
             title: 'Home',
             address: '/',
         },
-        {
-            title: 'Art Page',
-            address: '/artPage',
-        },
+        // {
+        //     title: 'Art Page',
+        //     address: '/artPage',
+        // },
         {
             title: 'Technical Skills',
             address: '#technicalSkills',
