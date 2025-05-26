@@ -79,11 +79,11 @@ export default function Home() {
           ))}
         </section>
 
-        <section>
+        {/* <section>
           <button onClick={() => router.push('/artPage')}>
             Explore Art Page
           </button>
-        </section>
+        </section> */}
 
       </main>
       <footer className={styles.footer}>
