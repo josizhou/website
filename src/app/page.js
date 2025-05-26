@@ -36,18 +36,14 @@ export default function Home() {
         <section className={styles.intro}>
           <h1>Hello! </h1>
           <div>
-            My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website! {<br />}
-            A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge. {<br />}
-            I&apos;m fluent in Spanish, Cantonese, English, and French and really enjoy learning new languages. {<br />}
-            I&apos;m also a huge fan of puzzles and riddles. In case you are too I&apos;ve created a little bit of a scavenger hunt, should you choose to take part. {<br />}
-            The first hint is as follows:
-            <p className={"styles.hint"}>A little positive feedback never hurt anybody. Click on the positive vibes for your next clue.</p>
-            If you aren&apos;t into scavenger hunts then please feel free to explore and I hope you enjoy.
-            <p>You can download my resume <a>here</a> or see a summary of my experience below.</p>
+            <p className={styles.introLine}>My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website!</p>
+            <p className={styles.introLine}>A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge.</p>
+            <p className={styles.introLine}>I&apos;m fluent in Spanish, Cantonese, English, and French and really enjoy learning new languages.</p>
+            <p className={styles.introLine}>You can download my resume <a>here</a> or see a summary of my experience below.</p>
           </div>
         </section>
         
-        <section className={styles.technicalSkills}>
+        <section className={styles.technicalSkills} id="technicalSkills">
           <h2>
             Technical Skills
           </h2>
@@ -68,9 +64,9 @@ export default function Home() {
           </ul>
         </section>
         
-        <GLARTDemo />
+        <GLARTDemo id="glartDemo"/>
         
-        <section>
+        <section id="workExperience">
           <h2 className={styles.heading}>Work Experience</h2>
           {workExperienceContent.map((workExperience, index) => (
             <AccordionElement {... workExperience} key={index} />

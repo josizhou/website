@@ -60,6 +60,10 @@
   display: flex;
 }
 
+.introLine {
+  margin: 0.5rem 0;
+}
+
 .sandwichButton {
   cursor: pointer;
   width: fit-content;

@@ -1,18 +1,25 @@
 import styles from './sandwichMenu.module.css';
 import closeIcon from '../../../assets/closeIcon.svg';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function SandwichMenu ({setIsMenuOpen}) {
-    const router = useRouter();
     const links = [
         {
             title: 'Home',
-            address: '/'
+            address: '/',
         },
         {
             title: 'Art Page',
-            address: '/artPage'
+            address: '/artPage',
+        },
+        {
+            title: 'Technical Skills',
+            address: '#technicalSkills',
+        },
+        {
+            title: 'Work Experience',
+            address: '#workExperience',
         }
     ]
 
@@ -24,16 +31,14 @@ export default function SandwichMenu ({setIsMenuOpen}) {
                 </div>
                 <section className={styles.links}>
                     {links.map((linkItem, index) => (
-                        <h2
+                        <Link
                             className={styles.link}
-                            onClick={() => {
-                                router.replace(linkItem.address);
-                                setIsMenuOpen(false);
-                            }}
+                            href={linkItem.address}
+                            onClick={() => setIsMenuOpen(false)}
                             key={index}
                         >
                             {linkItem.title}
-                        </h2>
+                        </Link>
                     ))}
                 </section>
             </div>
