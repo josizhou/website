@@ -5,7 +5,7 @@ import downArrow from '../../../assets/downArrow.svg';
 import upArrow from '../../../assets/upArrow.svg';
 import { useState } from 'react';
 
-export function AccordionElement ({title, content = null, bulletPoints = null, imageSrc = null, imageAlt = null}) {
+export function AccordionElement ({title, content = null, bulletPoints = null, imageSrc = null, imageAlt = null, url = null}) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className={styles.main}>
@@ -24,7 +24,9 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
                         </ul>
                     )}
                     { imageSrc &&
-                        <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
+                        <a href={url} target='_blank'>
+                            <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
+                        </a>
                     }
                 </div>
             </section>

@@ -15,6 +15,7 @@ const workExperienceContent = [
         ],
         imageSrc: favicon,
         imageAlt: "Konrad Group Logo",
+        url: 'https://www.konrad.com/',
     },
     {
         title: "Web Developer Co-op at Invoke Media",
@@ -28,6 +29,7 @@ const workExperienceContent = [
         ],
         imageSrc: invokeLogo,
         imageAlt: 'Invoke Media Logo',
+        url: 'https://www.builtbyinvoke.ca/',
     },
     {
         title: "Co-op Developer at Kinaxis",
@@ -39,6 +41,7 @@ const workExperienceContent = [
         ],
         imageSrc: kinaxisLogo,
         imageAlt: 'Kinaxis Logo',
+        url: 'https://www.kinaxis.com/en',
     },
 ]
 
