@@ -28,6 +28,12 @@
 
 .title {
     margin: 1rem 3rem;
+    align-items: baseline;
+}
+
+.emoji {
+    font-size: large;
+    margin: 0.5rem;
 }
 
 .closeButton {

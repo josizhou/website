@@ -10,7 +10,7 @@ export default function HintPopup({setIsHintOpen}) {
                 <div className={styles.closeButton} onClick={() => setIsHintOpen(false)}>
                     <Image src={closeIcon} alt="Close Button" width={15} height={15} draggable={false}/>
                 </div>
-                <p className={styles.title}>You&apos;ve successfully found the next hint!</p>
+                <p className={styles.title}>You&apos;ve successfully found the next hint! <span className={styles.emoji}>&#127881;</span></p>
                 <h3>hint hint hint hint</h3>
             </div>
         </div>

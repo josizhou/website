@@ -15,7 +15,7 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
             </section>
             <section className={isOpen ? styles.content : styles.hidden}>
                 <div className={styles.contentDiv}>
-                    {content}
+                    {content && <div className={styles.blurb}>{content}</div>}
                     { bulletPoints && (
                         <ul className={styles.bullets}>
                             {bulletPoints.map((item, index) => (

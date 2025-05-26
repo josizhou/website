@@ -32,8 +32,13 @@
 .content {
     display: flex;
     padding: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    /* width: 50vw; */
+}
+
+.blurb {
+    margin-bottom: 1rem;
 }
 
 .image {
@@ -41,6 +46,6 @@
 }
 
 .bullets {
-    margin: 0 1rem;
+    margin-left: 1rem;
 }
 
