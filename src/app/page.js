@@ -13,6 +13,7 @@ import SandwichMenu from "./components/sandwichMenu/sandwichMenu";
 import HintPopup from "./components/hintPopup/hintPopup";
 import { DownloadLink } from "./components/downloadLink/downloadLink";
 import confetti from "canvas-confetti";
+import smiskiWork from '../assets/smiski-work.png';
 
 export default function Home() {
   const router = useRouter();
@@ -104,7 +105,16 @@ export default function Home() {
         <GLARTDemo id="glartDemo"/>
         
         <section id="workExperience">
-          <h2 className={styles.heading}>Work Experience</h2>
+          <h2 className={styles.heading}>
+            Work Experience 
+            <Image
+              className={styles.smiskiWork}
+              src={smiskiWork}
+              alt='Smiski Going to Work'
+              height={40}
+              width={40}
+            />
+          </h2>
           {workExperienceContent.map((workExperience, index) => (
             <AccordionElement {... workExperience} key={index} />
           ))}

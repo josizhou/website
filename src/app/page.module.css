@@ -82,7 +82,13 @@
 }
 
 .heading {
+  display: flex;
   margin: 1rem;
+  align-items: center;
+}
+
+.smiskiWork {
+  margin: 0 1rem;
 }
 
 a.primary {
