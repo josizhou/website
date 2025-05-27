@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './downloadLink.module.css';
+import styles from './downloadLink.module.scss';
 
 export const DownloadLink = ({ url, fileName }) => {
     const onButtonClick = () => {

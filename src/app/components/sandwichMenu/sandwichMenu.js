@@ -1,4 +1,4 @@
-import styles from './sandwichMenu.module.css';
+import styles from './sandwichMenu.module.scss';
 import closeIcon from '../../../assets/closeIcon.svg';
 import Image from 'next/image';
 import Link from 'next/link';

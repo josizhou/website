@@ -1,5 +1,5 @@
 'use client'
-import styles from './accordionElement.module.css';
+import styles from './accordionElement.module.scss';
 import Image from "next/image";
 import downArrow from '../../../assets/downArrow.svg';
 import upArrow from '../../../assets/upArrow.svg';

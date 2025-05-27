@@ -2,7 +2,7 @@
 import Image from "next/image";
 import headshot from "../assets/headshot.png"
 import smiskiThumbsUp from '../assets/smiski-thumbsup.png'
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import { useRouter } from 'next/navigation';
 import GLARTDemo from "./components/GLARTDemo/GLARTDemo";
 import workExperienceContent from "@/assets/workExperienceContent";

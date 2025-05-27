@@ -4,7 +4,7 @@ import { AccordionElement } from "../components/accordionElement/accordionElemen
 import smiskiThumbsUp from '../../assets/smiski-thumbsup.png';
 import backArrow from '../../assets/backArrow.svg';
 import Image from "next/image";
-import styles from './page.module.css';
+import styles from './page.module.scss';
 import { useRouter } from 'next/navigation';
 // import { ReactP5Wrapper } from "@p5-wrapper/react";
 

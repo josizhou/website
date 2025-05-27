@@ -1,4 +1,4 @@
-import styles from "./GLARTDemo.module.css";
+import styles from "./GLARTDemo.module.scss";
 
 export default function GLARTDemo() {
     return (

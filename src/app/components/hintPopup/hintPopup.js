@@ -1,4 +1,4 @@
-import styles from './hintPopup.module.css';
+import styles from './hintPopup.module.scss';
 import closeIcon from '../../../assets/closeIcon.svg';
 import Image from 'next/image';
 
