@@ -12,11 +12,42 @@ import { useState } from "react";
 import SandwichMenu from "./components/sandwichMenu/sandwichMenu";
 import HintPopup from "./components/hintPopup/hintPopup";
 import { DownloadLink } from "./components/downloadLink/downloadLink";
+import confetti from "canvas-confetti";
 
 export default function Home() {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHintOpen, setIsHintOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsHintOpen(true);
+    const duration = 3 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 2 };
+
+    const randomInRange = (min, max) =>
+      Math.random() * (max - min) + min;
+
+    const interval = window.setInterval(() => {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+      });
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+      });
+    }, 250);
+  };
 
   return (
     <div className={styles.page}>
@@ -88,7 +119,7 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <p> thanks for visiting! </p>
-        <a onClick={() => setIsHintOpen(true)}>
+        <a onClick={handleClick}>
           <Image
               aria-hidden
               src={smiskiThumbsUp}

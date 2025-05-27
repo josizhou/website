@@ -1,4 +1,4 @@
-import favicon from './favicon.png';
+import konradLogo from './konradLogo.png';
 import invokeLogo from './invokeLogo.svg';
 import kinaxisLogo from './kinaxisLogo.svg';
 
@@ -13,7 +13,7 @@ const workExperienceContent = [
             'Developed applications with a focus on accessibility and responsiveness to media sizes using SASS and CSS Grid',
             'Introduced testing to a client project and brought test coverage from 0 to 80% by writing 204 unit tests in 1 month - wrote Jest unit tests, API microservice integration tests, and Express route tests with SuperTest'
         ],
-        imageSrc: favicon,
+        imageSrc: konradLogo,
         imageAlt: "Konrad Group Logo",
         url: 'https://www.konrad.com/',
     },
