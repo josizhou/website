@@ -56,3 +56,8 @@
     margin-left: 1rem;
 }
 
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}

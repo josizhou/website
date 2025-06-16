@@ -24,7 +24,7 @@ export function AccordionElement ({title, content = null, bulletPoints = null, i
                         </ul>
                     )}
                     { imageSrc &&
-                        <a href={url} target='_blank'>
+                        <a className={styles.logo} href={url} target='_blank'>
                             <Image className={styles.image} src={imageSrc} alt={imageAlt} height={100} width={100} draggable={false}/>
                         </a>
                     }

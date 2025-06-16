@@ -67,7 +67,7 @@ export default function Home() {
           priority
         />
         <section className={styles.intro}>
-          <h1>Hello! </h1>
+          <h1 className={styles.heading}>Hello! </h1>
           <div>
             <p className={styles.introLine}>My name is Josiann Zhou and I&apos;m a software developer. Welcome to my portfolio website!</p>
             <p className={styles.introLine}>A bit about me: I love music, art, and technology. Most of my experience has been in web development but I love any challenge.</p>
@@ -82,7 +82,7 @@ export default function Home() {
         </section>
         
         <section className={styles.technicalSkills} id="technicalSkills">
-          <h2>
+          <h2 className={styles.heading}>
             Technical Skills
           </h2>
           <ul>

@@ -58,3 +58,12 @@
     background-color: rgba(100, 100, 100, 0.3);
     width: 70vw;
 }
+
+@media (max-width: 768px) {
+    .main {
+        width: 70vw;
+    }
+    .links {
+        margin-left: 1rem;
+    }
+}

@@ -9,6 +9,10 @@ export default function SandwichMenu ({setIsMenuOpen}) {
             title: 'Home',
             address: '/',
         },
+        {
+            title: 'Digital Art Glove',
+            address: '/digitalArtGlovePage',
+        },
         // {
         //     title: 'Art Page',
         //     address: '/artPage',

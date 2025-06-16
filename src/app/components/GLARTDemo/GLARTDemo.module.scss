@@ -1,10 +1,28 @@
 .main {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 2rem;
+    width: 100%;
+    &:hover {
+        background-color: lavender;
+        color: #483d8b;
+
+        .arrow {
+            visibility: visible;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.title {
+    display: flex;
 }
 
 .heading {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -16,8 +34,12 @@
 
 .player {
     align-self: center;
-    margin: 4rem;
+    margin-top: 3rem;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 1rem 1rem lavender;
+}
+
+.arrow {
+    visibility: hidden;
 }

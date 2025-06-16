@@ -76,15 +76,21 @@
     background-color: rgba(175, 175, 175, 0.25);
 }
 
+.technicalSkills {
+  width: 100%;
+}
+
 .technicalSkills ul {
   font-family: 'Courier New', Courier, monospace;
   margin: 2rem;
+  align-self: center;
 }
 
 .heading {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
   align-items: center;
+  align-self: flex-start;
 }
 
 .smiskiWork {
@@ -138,7 +144,7 @@ a.secondary {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .page {
     padding: 32px;
     padding-bottom: 80px;
@@ -153,18 +159,12 @@ a.secondary {
     text-align: center;
   }
 
-  .ctas {
-    flex-direction: column;
+  .h2 {
+    align-self: flex-start;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
+  .sandwichButton {
+    align-self: flex-start;
   }
 
   .footer {
