@@ -91,7 +91,14 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 0 3rem;
+}
+
+.link {
+    color: darkslateblue;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 @media (max-width: 768px) {

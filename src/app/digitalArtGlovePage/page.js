@@ -10,12 +10,12 @@ import glartArchitecture from '../../assets/glartArchitecture.png';
 import glartDataFlow from '../../assets/glartDataFlow.png';
 import glartSensors from '../../assets/glartSensors.png';
 import glartInstructions from '../../assets/glartHowToUse.png';
-import glartFlower from '../../assets/glartFlower.png';
-import glartKaleidoscope from '../../assets/glartKaleidoscope.png';
-import glartLineBrush from '../../assets/glartLineBrush.png';
+// import glartFlower from '../../assets/glartFlower.png';
+// import glartKaleidoscope from '../../assets/glartKaleidoscope.png';
+// import glartLineBrush from '../../assets/glartLineBrush.png';
 import glartPrototype1 from '../../assets/glartPrototype1.png';
 import glartPrototype2 from '../../assets/glartPrototype2.png';
-import glartPrototype3 from '../../assets/glartPrototype3.png';
+// import glartPrototype3 from '../../assets/glartPrototype3.png';
 
 export default function GLARTDemo() {
     const router = useRouter();
@@ -111,18 +111,25 @@ export default function GLARTDemo() {
                 </section>
                 <section className={styles.section}>
                     <h2 className={styles.title}>Demo Video</h2>
-                    <div className={styles.player}>
-                        <iframe
-                            width="720"
-                            height="405"
-                            style={{maxWidth: '100%', outline: 'solid 2px lavender'}}
-                            src="https://www.youtube.com/embed/xtl84rtYhtc?si=6wXFkxONqOMxLAHR&rel=0"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen>
-                        </iframe>
+                    <div className={styles.fullSection}>
+                        <div className={styles.player}>
+                            <iframe
+                                width="720"
+                                height="405"
+                                style={{maxWidth: '100%', outline: 'solid 2px lavender'}}
+                                src="https://www.youtube.com/embed/xtl84rtYhtc?si=6wXFkxONqOMxLAHR&rel=0"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+                        <p className={styles.textblock} style={{color: 'slategrey'}}>
+                            *I was primarily responsible for the software side of this project but 
+                            another great breakdown of the Digital Art Glove from a more mechanical standpoint can be found on
+                            Kaylee&apos;s website <a href='https://kayleejung.com/digitalartglove' className={styles.link} target="blank">here</a>.
+                        </p>
                     </div>
                 </section>
             </main>
