@@ -1,0 +1,87 @@
+.page {
+    --gray-rgb: 0, 0, 0;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+
+    --button-primary-hover: #383838;
+    --button-secondary-hover: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    min-height: 100svh;
+    padding-top: 80px;
+    font-family: var(--font-geist-sans);
+    width: 50vw;
+}
+
+.backButton {
+    align-self: start;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.mainTitle {
+    align-self: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+.emojiContainer {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.images {
+    display: flex;
+    height: 50vh;
+    overflow: auto;
+}
+
+.image {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.singleImageContainer {
+    display: flex;
+    justify-content: center;
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+}
+
+.largeImage {
+    object-fit: contain;
+    width: auto;
+    max-height: 800px;
+    max-width: 100%;
+    margin: 1rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.emoji {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+}

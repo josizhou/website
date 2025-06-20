@@ -99,6 +99,8 @@ export default function Home() {
             <li>ExpressJS</li>
             <li>Tailwind CSS</li>
             <li>p5 JS</li>
+            <li>Apollo GraphQL</li>
+            <li>MariaDB</li>
           </ul>
         </section>
         

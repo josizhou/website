@@ -17,7 +17,7 @@ import glartPrototype1 from '../../assets/glartPrototype1.png';
 import glartPrototype2 from '../../assets/glartPrototype2.png';
 // import glartPrototype3 from '../../assets/glartPrototype3.png';
 
-export default function DigitalArtPage() {
+export default function DigitalArtGlovePage() {
     const router = useRouter();
 
     return(

@@ -13,6 +13,10 @@ export default function SandwichMenu ({setIsMenuOpen}) {
             title: 'Digital Art Glove',
             address: '/digitalArtGlovePage',
         },
+        {
+            title: 'About Me',
+            address: '/aboutMePage',
+        },
         // {
         //     title: 'Art Page',
         //     address: '/artPage',
